@@ -1,0 +1,86 @@
+database
+Workouts
+
+
+row represent week
+
+Biceps table
+--------------------------------------------------------
+CREATE TABLE bicep (
+    BDC                           varchar(50), -- bicep_dumbell_curl
+    weightA                       varchar(50),
+    repsA                         int,
+    setsA                         int,
+    BPC                           varchar(50), --bicep_pulley_curl
+    weightB                       varchar(50),
+    repsB                         int,
+    setsB                         int,
+    BWC                           varchar(50), --bicep_wire_curl
+    weightC                       varchar(50),
+    repsC                         int,
+    setsC                         int
+);
+
+
+
+CREATE TABLE tricep (
+    OTE                           varchar(50), --Overhead_Triceps_Extension
+    weightA                       varchar(50),
+    repsA                         int,
+    setsA                         int,
+    RTP                           varchar(50), --Rope_Tricep_Pushdown
+    weightB                       varchar(50),
+    repsB                         int,
+    setsB                         int,
+    BTP                           varchar(50), --Bar_Tricep_Pushdown
+    weightC                       varchar(50),
+    repsC                         int,
+    setsC                         int,
+    RRTP                          varchar(50), --Reverse_Rope_Tricep_Pushdown
+    weightD                       varchar(50),
+    repsD                         int,
+    setsD                         int
+
+);
+
+
+
+CREATE TABLE chest (
+    PU                            varchar(50), --push ups
+    timesA                        varchar(50),
+    repsA                         int,
+    setsA                         int,
+    SMCP                          varchar(50), --Seated Machine Chest Press
+    weightA                       varchar(50),
+    repsB                         int,
+    setsB                         int,
+    CF                            varchar(50), --Chest Fly
+    weightB                       varchar(50),
+    repsC                         int,
+    setsC                         int,
+    RRTP                          varchar(50), --Reverse_Rope_Tricep_Pushdown
+    weightC                       varchar(50),
+    repsD                         int,
+    setsD                         int
+);
+
+
+
+CREATE TABLE shoulders (
+    PU                            varchar(50), --push ups
+    timesA                        varchar(50),
+    repsA                         int,
+    setsA                         int,
+    SMCP                          varchar(50), --Seated Machine Chest Press
+    weightA                       varchar(50),
+    repsB                         int,
+    setsB                         int,
+    CF                            varchar(50), --Chest Fly
+    weightB                       varchar(50),
+    repsC                         int,
+    setsC                         int,
+    RRTP                          varchar(50), --Reverse_Rope_Tricep_Pushdown
+    weightC                       varchar(50),
+    repsD                         int,
+    setsD                         int
+);
