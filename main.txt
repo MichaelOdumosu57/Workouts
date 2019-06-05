@@ -48,11 +48,18 @@ CREATE TABLE bicep (
             setsC
     )
         VALUES (
-        '2019-05-22 04:37:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162620.jpg',
-        'leaving place messy',
-        'C',
-        'Someone left paper tissue on the toliet flush throw it out',
-        3
+        'week1',
+        '15lbs',
+        10,
+        4,
+        'week1',
+        '30lbs',
+        10,
+        4,
+        'week1',
+        '65lbs',
+        10,
+        4
     );
 
 
@@ -78,6 +85,46 @@ CREATE TABLE tricep (
 );
 
 
+    INSERT INTO tricep (
+        OTE,
+        weightA,
+        repsA,
+        setsA,
+        RTP,
+        weightB,
+        repsB,
+        setsB,
+        BTP,
+        weightC,
+        repsC,
+        setsC,
+        RRTP,
+        weightD,
+        repsD,
+        setsD
+            
+    )
+        VALUES (
+        'week1',
+        '10lbs',
+        10,
+        4,
+        'week1',
+        '32lbs',
+        10,
+        4,
+        'week1',
+        '22lbs',
+        10,
+        4,
+        'week1',
+        '22lbs',
+        10,
+        4
+
+    );
+
+
 
 CREATE TABLE chest (
     PU                            varchar(50), --push ups
@@ -86,17 +133,47 @@ CREATE TABLE chest (
     setsA                         int,
     SMCP                          varchar(50), --Seated Machine Chest Press
     weightA                       varchar(50),
-    repsB                         int,
-    setsB                         int,
+    repsB                         varchar(200),
+    setsB                         varchar(200),
     CF                            varchar(50), --Chest Fly
     weightB                       varchar(50),
     repsC                         int,
-    setsC                         int,
-    RRTP                          varchar(50), --Reverse_Rope_Tricep_Pushdown
-    weightC                       varchar(50),
-    repsD                         int,
-    setsD                         int
+    setsC                         int
+
 );
+
+
+    INSERT INTO chest (
+        PU,
+        timesA,
+        -- repsA,
+        -- setsA,
+        SMCP,
+        weightA,
+        repsB,
+        setsB
+        -- CF,
+        -- weightB,
+        -- repsC,
+        -- setsC,
+
+            
+    )
+        VALUES (
+        'week2',
+        '20',
+        -- 10,
+        -- 4,
+        'week2',
+        '25lbs',
+        '15,12,10',
+        '1 each for 3 total'
+        -- 'week1',
+        -- '22lbs',
+        -- 10,
+        -- 4,
+
+    );
 
 
 
@@ -116,7 +193,42 @@ CREATE TABLE shoulders (
 
 );
 
-CREATE TABLE abs (
+
+
+    INSERT INTO shoulders (
+            SF,
+            weightA,
+            repsA,
+            setsA,
+            SMA,
+            weightB,
+            repsB,
+            setsB,
+            SP,
+            weightC,
+            repsC,
+            setsC
+            
+    )
+        VALUES (
+            'week1',
+            '0lbs',
+            10,
+            4,
+            'week1',
+            '20lbs',
+            12,
+            4,
+            'week1',
+            '50lbs',
+            10,
+            4
+            
+    
+    );
+
+
+CREATE TABLE abss (
     SU                            varchar(50), --sit ups
     weightA                       varchar(50),
     repsA                         int,
@@ -136,8 +248,49 @@ CREATE TABLE abs (
 
 );
 
+
+    INSERT INTO abss (
+        SU,
+        weightA,
+        repsA,
+        setsA,
+        LMA,
+        weightB,
+        repsB,
+        setsB,
+        O,
+        weightC,
+        repsC,
+        setsC,
+        GSU,
+        weightD,
+        repsD,
+        setsD
+            
+    )
+        VALUES (
+            'week1',
+            '0lbs',
+            40,
+            1,
+            'week1',
+            '0lbs',
+            10,
+            4,
+            'week1',
+            '50lbs',
+            10,
+            4,
+            'week1',
+            '25lbs',
+            30,
+            4
+            
+    
+    );
+
 CREATE TABLE back (
-    EPU                           varchar(50), --extended pull up spread wide amd reach the bar
+    EPUC                          varchar(50), --extended pull up calithensics  spread wide amd reach the bar
     weightA                       varchar(50),
     repsA                         int,
     setsA                         int,
@@ -152,3 +305,43 @@ CREATE TABLE back (
 
 );
 
+
+    INSERT INTO abss (
+        EPUC,
+        weightA,
+        repsA,
+        setsA,
+        LMA,
+        weightB,
+        repsB,
+        setsB,
+        O,
+        weightC,
+        repsC,
+        setsC,
+        GSU,
+        weightD,
+        repsD,
+        setsD
+            
+    )
+        VALUES (
+            'week1',
+            '0lbs',
+            40,
+            1,
+            'week1',
+            '0lbs',
+            10,
+            4,
+            'week1',
+            '50lbs',
+            10,
+            4,
+            'week1',
+            '25lbs',
+            30,
+            4
+            
+    
+    );
