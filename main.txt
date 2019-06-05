@@ -4,6 +4,17 @@ Workouts
 
 row represent week
 
+
+sample addition
+
+    RRTP                          varchar(50), --Reverse_Rope_Tricep_Pushdown
+    weightC                       varchar(50),
+    repsD                         int,
+    setsD                         int
+
+
+
+
 Biceps table
 --------------------------------------------------------
 CREATE TABLE bicep (
@@ -20,6 +31,29 @@ CREATE TABLE bicep (
     repsC                         int,
     setsC                         int
 );
+
+
+    INSERT INTO bicep (
+            BDC,
+            weightA,
+            repsA,
+            setsA,
+            BPC,
+            weightB,
+            repsB,
+            setsB,
+            BWC,
+            weightC,
+            repsC,
+            setsC
+    )
+        VALUES (
+        '2019-05-22 04:37:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162620.jpg',
+        'leaving place messy',
+        'C',
+        'Someone left paper tissue on the toliet flush throw it out',
+        3
+    );
 
 
 
@@ -67,20 +101,54 @@ CREATE TABLE chest (
 
 
 CREATE TABLE shoulders (
-    PU                            varchar(50), --push ups
-    timesA                        varchar(50),
+    SF                            varchar(50), --shoulder fly one side one foward
+    weightA                       varchar(50),
     repsA                         int,
     setsA                         int,
-    SMCP                          varchar(50), --Seated Machine Chest Press
-    weightA                       varchar(50),
+    SMA                           varchar(50), --Shoulder move A-, take dumbells sit on an inclined bench and push to the ceiling then                                                  down and turn back toward each other, squeeze chest as you turn inward
+    weightB                       varchar(50),
     repsB                         int,
     setsB                         int,
-    CF                            varchar(50), --Chest Fly
+    SP                            varchar(50), --shoulder press, go to shoulder press machine
+    weightC                       varchar(50),
+    repsC                         int,
+    setsC                         int
+
+);
+
+CREATE TABLE abs (
+    SU                            varchar(50), --sit ups
+    weightA                       varchar(50),
+    repsA                         int,
+    setsA                         int,
+    LMA                           varchar(50), --ab move lift lower legs  to 45 degress then bring back down
     weightB                       varchar(50),
+    repsB                         int,
+    setsB                         int,
+    O                             varchar(50), --obliques
+    weightC                       varchar(50),
     repsC                         int,
     setsC                         int,
-    RRTP                          varchar(50), --Reverse_Rope_Tricep_Pushdown
-    weightC                       varchar(50),
+    GSU                           varchar(50), --gym sit ups
+    weightD                       varchar(50),
     repsD                         int,
     setsD                         int
+
 );
+
+CREATE TABLE back (
+    EPU                           varchar(50), --extended pull up spread wide amd reach the bar
+    weightA                       varchar(50),
+    repsA                         int,
+    setsA                         int,
+    LSR                           varchar(50), --low seated row
+    weightB                       varchar(50),
+    repsB                         int,
+    setsB                         int,
+    LPD                             varchar(50), --lat pull down
+    weightC                       varchar(50),
+    repsC                         int,
+    setsC                         int
+
+);
+
